@@ -1,0 +1,18 @@
+#header {
+    grid-area: header;
+    background-color: var(--second-bg-color);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.header-logo {
+    width: 80px;
+}
+
+.header-title {
+    color: var(--second-text-color);
+    font-size: 1.5em;
+    font-weight: bold;
+    margin-left: 3rem;
+}

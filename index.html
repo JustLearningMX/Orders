@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Qlik Mashup</title>
+
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Noto+Serif:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+        <link rel="stylesheet" href="css/styles.css">
+        <link rel="stylesheet" href="css/header.css">
+        <link rel="stylesheet" href="css/main.css">
+        <link rel="stylesheet" href="css/footer.css">
+
+        <script defer type="module" src="js/script.js"></script>
+        <script defer type="module" src="js/QlikObjects.js"></script>
+    </head>
+    <body>
+        <header id="header">
+            <img class="header-logo" src="assets/img.png" alt="logo-data-id">
+            <span class="header-title">
+                Resumen de Ordenes
+            </span>
+        </header>
+
+        <main id="main">
+
+            <section class="container-objects objects_aggregations">
+
+            </section>
+
+            <section class="container-objects objects_map_graph">
+
+            </section>
+
+            <section class="container-objects objects_agg_graph">
+
+            </section>
+
+            <div id="popup" style="display:none;">
+                <div id="popupText"></div>
+                <button id="closePopup">Close</button>
+            </div>
+        </main>
+
+        <footer id="footer">
+            <span> By &nbsp; </span> <a href="https://hiramchavez.tech" target="_blank">Hiram Chavez</a>
+        </footer>
+
+    <script src="https://81tn0pfk70mvwxf.us.qlikcloud.com/resources/assets/external/requirejs/require.js"></script>
+    </body>
+</html>

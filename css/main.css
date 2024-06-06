@@ -1,0 +1,44 @@
+#main {
+    grid-area: main;
+    padding: 20px;
+    gap: 10px;
+    display: grid;
+    grid-template:
+      "objects_aggregations" auto
+      "objects_map_graph" auto
+      "objects_agg_graph" auto / 1fr;
+}
+
+.objects_aggregations {
+    grid-area: objects_aggregations;
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(190px, 1fr));
+    gap: 10px;
+}
+
+.objects_map_graph {
+    grid-area: objects_map_graph;
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(45dvw, 1fr));
+    gap: 10px;
+}
+
+.objects_agg_graph {
+    grid-area: objects_agg_graph;
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(min(270px, 330px), 1fr));
+    gap: 10px;
+}
+
+.qvobject {
+    min-height: 150px;
+    box-shadow: 1px 1px 2px 1px rgb(166 166 166 / 60%);
+}
+
+.objects_map_graph {
+    min-height: 230px;
+}
+
+.QVobjects_agg_graph {
+    min-height: 180px;
+}

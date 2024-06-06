@@ -1,0 +1,46 @@
+/*Configuración para usar las cajas*/
+html {
+    box-sizing: border-box;
+    height: 100%;
+}
+
+*,
+*:before,
+*:after {
+    margin: 0;
+    padding: 0;
+    outline: 0;
+    box-sizing: inherit;
+}
+
+:root {
+    --main-bg-color: #FFFFFF;
+    --second-bg-color: #0f206c;
+
+    --main-text-color: #727272;
+    --second-text-color: #FFFFFF;
+    --third-text-color: #A6A6A6;
+
+    --main-a-text-color: #023859;
+    --second-a-text-color: #1593B9;
+
+    --button-main-bg: #77E2EA;
+
+    --border-color-form: #A6A6A6;
+
+    --size-spinner: 1;
+}
+
+/*Estilos del cuerpo principal*/
+body {
+    background-color: var(--main-bg-color); /*Color de fondo*/
+    color: var(--main-text-color); /*Color de las fuentes*/
+    display: grid; /*Grilla de filas para el header, main y footer*/
+    min-height: 100%;
+    /*Creamos un template-area para el maquetado general del sitio
+      Diseño Mobile-First*/
+    grid-template:
+      "header" 50px
+      "main  " 1fr
+      "footer" auto / 1fr;
+}

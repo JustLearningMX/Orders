@@ -1,0 +1,16 @@
+#footer {
+    grid-area: footer;
+    background-color: var(--second-bg-color);
+    display: flex;
+    justify-content: center;
+    padding: 2rem;
+}
+
+#footer span {
+    color: var(--second-text-color);
+}
+
+#footer a {
+    color: var(--second-text-color);
+    text-decoration: underline;
+}
